@@ -25,6 +25,9 @@ class Calculator_tests(unittest.TestCase):
     def test_dob(self):
         self.assertEqual(self.calc_obj.dob(6, 1993), "6/1993")
 
+    def test_cm_m(self):
+        self.assertEqual(self.calc_obj.cm_to_m(1000), 10.0)
+
 
 
 

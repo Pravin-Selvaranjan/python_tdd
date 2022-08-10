@@ -47,6 +47,11 @@ class SimpleCalc:
 
     def dob(self,a, b):
         return (f"{a}/{b}")
+        
+    def cm_to_m(self, a):
+        return a/100
+
+
 
 
 
@@ -93,17 +98,21 @@ class Calculator_tests(unittest.TestCase):
 
     def test_dob(self):
         self.assertEqual(self.calc_obj.dob(6, 1993), "6/1993")
+        
+    def test_cm_m(self):
+        self.assertEqual(self.calc_obj.cm_to_m(1000), 10.0)
+
 
 ```
 ```
-Test_tdd_tests.py::Calculator_tests::test_add PASSED                                                                                                                                                                             [ 16%] 
-Test_tdd_tests.py::Calculator_tests::test_divide PASSED                                                                                                                                                                          [ 33%] 
-Test_tdd_tests.py::Calculator_tests::test_dob PASSED                                                                                                                                                                             [ 50%] 
-Test_tdd_tests.py::Calculator_tests::test_multiply PASSED                                                                                                                                                                        [ 66%] 
-Test_tdd_tests.py::Calculator_tests::test_percent PASSED                                                                                                                                                                         [ 83%] 
+Test_tdd_tests.py::Calculator_tests::test_add PASSED                                                                                                                                                                             [ 14%] 
+Test_tdd_tests.py::Calculator_tests::test_cm_m PASSED                                                                                                                                                                            [ 28%] 
+Test_tdd_tests.py::Calculator_tests::test_divide PASSED                                                                                                                                                                          [ 42%] 
+Test_tdd_tests.py::Calculator_tests::test_dob PASSED                                                                                                                                                                             [ 57%] 
+Test_tdd_tests.py::Calculator_tests::test_multiply PASSED                                                                                                                                                                        [ 71%]
+Test_tdd_tests.py::Calculator_tests::test_percent PASSED                                                                                                                                                                         [ 85%] 
 Test_tdd_tests.py::Calculator_tests::test_subtract PASSED                                                                                                                                                                        [100%] 
 
-========================================================================================================== 6 passed in 0.03s ========================================================================================================== 
+========================================================================================================== 7 passed in 0.04s ========================================================================================================== 
 PS C:\Users\pvs15\PycharmProjects\python_tdd> 
 ```
-

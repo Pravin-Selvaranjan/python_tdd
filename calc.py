@@ -19,6 +19,10 @@ class SimpleCalc:
     def dob(self,a, b):
         return (f"{a}/{b}")
 
+    def cm_to_m(self, a):
+        return a/100
+
+
 
 
 
@@ -32,6 +36,8 @@ Calculator.subtract(10, 5)
 print(Calculator.add(5, 7))
 print(Calculator.percent_calc(5, 20))
 print(Calculator.dob(6, 1993))
+print(Calculator.cm_to_m(1000))
+
 
 # create a function for dob another for %
 # another function for cm to m
