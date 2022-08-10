@@ -8,3 +8,10 @@
 
 
 - 3. Refactor the Code: Once the test runs successfully, check for redundancy or any possible code optimizations to enhance overall performance. Ensure that refactoring does not affect the external behavior of the program.
+
+# Benefits
+- Fewer bugs and errors
+- Higher quality code
+- Save costs in the long run 
+
+
